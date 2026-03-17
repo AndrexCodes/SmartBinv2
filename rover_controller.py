@@ -1196,6 +1196,7 @@ GPIO.setup(ULTRA_ECHO, GPIO.IN)
 
 # Main LED
 GPIO.setup(MAIN_LED, GPIO.OUT)
+GPIO.output(MAIN_LED, GPIO.LOW)
 
 # IR Pins as Input
 GPIO.setup(IR_LEFT, GPIO.IN, pull_up_down=GPIO.PUD_UP)
