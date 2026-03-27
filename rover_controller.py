@@ -1573,9 +1573,9 @@ def search_for_text():
     
     # Rotate while searching
     if 0 < distance < CAUTION_DISTANCE:
-        rotate_speed = 90
+        rotate_speed = MANUAL_SPEED * 0.6  # Rotate slower when something is close
     else:
-        rotate_speed = 100
+        rotate_speed = MANUAL_SPEED
     
     set_motor_speed('A', rotate_speed)
     set_motor_speed('B', rotate_speed)  # Opposite directions for rotation
